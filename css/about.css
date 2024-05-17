@@ -1,0 +1,68 @@
+@import url(./style.css);
+
+.section .about-content{
+    padding: 1rem 5%;
+}
+
+.section .about-title{
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 1.3rem;
+}
+.section .about-title h2{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--other2);
+}
+
+.section .about-content p{
+    font-size: 1.7rem;
+}
+
+.benefits-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    padding: 3rem 5%;
+    color: aliceblue;
+}
+.benefits-container .benefit{
+    text-align: center;
+    padding: 2rem 1.2rem;
+    /* border: 2.5px solid var(--other2); */
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--other2);
+    transition: .3s ease-in-out;
+}
+.benefits-container .benefit:hover{
+    transform: scale(.95);
+    cursor: pointer;
+}
+.benefits-container .benefit i{
+    font-size: 7rem;
+    padding-bottom: 2rem;
+    color: var(--other1);
+}
+.benefits-container .benefit h3{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.benefits-container .benefit p{
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+
+/* MEDIA */
+@media (max-width: 990px){
+    .benefits-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 730px){
+    .benefits-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

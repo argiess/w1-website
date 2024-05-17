@@ -1,0 +1,91 @@
+@import url(./style.css);
+
+.contact-form{
+    background: linear-gradient(to bottom right, var(--dark1), var(--dark2));
+    text-align: center;
+    padding: 3.5rem 5rem;
+}
+
+.contact-form p{
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 2.5rem;
+}
+
+.contact-form .div{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+    background: var(--dark1);
+    box-shadow: 0 0 5px var(--other2);
+}
+.contact-form .div h3{
+    font-size: 3rem;
+    color: var(--other2);
+}
+
+.contact-form input, .contact-form textarea{
+    width: 400px;
+    height: 40px;
+    padding: .8rem;
+    margin-bottom: 2.5rem;
+    color: var(--light1);
+    background: transparent;
+    border: 1.8px solid var(--dark2);
+    border-radius: 2.5px;
+    box-shadow: 0 0 5px var(--other1);
+    resize: none;
+    outline: none;
+    transition: .5s ease-in-out;
+}
+.contact-form textarea{
+    height: 100px;
+}
+.contact-form input:focus, .contact-form textarea:focus{
+    border-color: var(--other1);
+}
+.contact-form button{
+    max-width: 100%;
+    width: 400px;
+    padding: 1.8rem;
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: #111;
+    background: var(--other1);
+    border: 2.5px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+.contact-form button:hover{
+    color: var(--other1);
+    background: transparent;
+    border-color: var(--other1);
+    box-shadow: 0 0 10px var(--other1);
+}
+
+.nav-menu .btn{
+    color: var(--other1);
+    background: transparent;
+    border-color: var(--other1);
+}
+
+/* MEDIA */
+@media (max-width: 550px){
+    .contact-form input, .contact-form textarea{
+        max-width: 100%;
+    }
+    .contact-form h2{
+        font-size: 3rem;
+    }
+    .contact-form .div h3{
+        font-size: 2.5rem;
+    }
+    .contact-form{
+        padding: 1.5rem;
+    }
+    .contact-form button{
+        padding: 1.5rem;
+    }
+}

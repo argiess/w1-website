@@ -1,0 +1,132 @@
+@import url(./style.css);
+
+/* HERO START */
+.hero-section{
+    position: relative;
+    min-height: 90vh;
+    width: 100%;
+    padding: 3rem 1rem;
+    background: url(../imgs/hero-bg.jpg), var(--dark2);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.hero-section .hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-section .hero-text h1{
+    font-family: 'Ubuntu', serif;
+    font-size: 5.8rem;
+    font-weight: 500;
+    line-height: 1;
+    padding: 0 0 1rem;
+}
+
+.hero-section .hero-text p{
+    padding: 1rem 0 6.6rem;
+    font-size: 1.8rem;
+}
+
+.hero-section .hero-text .btn{
+    padding: 1.2rem;
+    font-weight: 600;
+}
+.hero-section .hero-text .btn:hover{
+    background: var(--dark1);
+}
+/* HERO END */
+
+
+/* ABOUT SECTION START */
+.about-section{
+    display: flex;
+    justify-content: center;
+    gap: 5.5rem;
+    width: 100%;
+    height: fit-content;
+    padding: 5rem 5%;
+    background: #000;
+}
+.about-section .left img{
+    display: block;
+    max-width: 100%;
+    width: 16rem;
+    padding: 1rem 2.5rem;
+    margin: 0 1rem 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--other1);
+    background: var(--dark2);
+}
+.about-section .left img:hover{
+    background: var(--other1);
+    cursor: pointer;
+}
+.about-section .left{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-section .right{
+    width: 50%;
+}
+.about-section .right h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--other2);
+}
+.about-section .right h3{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.about-section .right p{
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+.about-section .right a{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    border-radius: 10.5px;
+    border: 2px solid var(--other1);
+    color: var(--dark1);
+    background: var(--other1);
+}
+.about-section .right a:hover{
+    box-shadow: 0 0 15px var(--other1);
+    color: var(--other1);
+    background: var(--dark1);
+}
+/* ABOUT SECTION END */
+
+
+/* MEDIA */
+@media (max-width: 888px){
+    .about-section{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 1.5rem 5%;
+    }
+    .about-section .right{
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px){
+    .about-section .left img{
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 1.5rem;
+    }
+    .about-section .left{
+        flex-direction: column;
+    }
+}

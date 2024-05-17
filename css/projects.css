@@ -1,0 +1,91 @@
+@import url(./style.css);
+
+.section .container{
+    width: 100%;
+    padding: 3rem;
+
+}
+.section .container h3{
+    font-size: 3rem;
+    color: var(--other2);
+}
+.section .container p{
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.section .project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    max-height: auto;
+    /* border: 1.5px solid var(--light1);f */
+    border-radius: 10.5px;
+    opacity: 1;
+    backface-visibility: hidden;
+    transition: .5s ease;
+    box-shadow: 0 0 5px var(--light1);
+}
+  
+.middle {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+}
+  
+.div{
+    position: relative;
+    width: 100%;
+}
+
+.div:hover .img {
+    opacity: .3;
+    /* padding: .3rem; */
+}
+  
+.div:hover .middle {
+    opacity: 1;
+} 
+  
+.text {
+    background-color: var(--other1);
+    color: var(--dark1);
+    border: 2.5px solid transparent;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    transition: .3s;
+}
+.text:hover{
+    background-color: var(--dark1);
+    color: var(--other1);
+    border-color: var(--other1);
+    box-shadow: 0 0 10px var(--other1);
+}
+
+
+/* MEDIA */
+@media (max-width: 800px){
+    .section .project-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section .container h3{
+        font-size: 2.5rem;
+        color: var(--other2);
+    }
+    .section .container p{
+        font-size: 1.3rem;
+        margin-bottom: 2.5rem;
+    }
+}
