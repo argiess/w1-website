@@ -127,6 +127,14 @@
         margin-bottom: 1.5rem;
     }
     .about-section .left{
+        display: none;
         flex-direction: column;
+    }
+    .about-section{
+        padding: 5rem 5%;
+        background: url(../imgs/about_icons/complilation.png)no-repeat, #333;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
     }
 }
